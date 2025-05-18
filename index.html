@@ -4,15 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Car Rent</title>
+    <!-- Font - Google -Start -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="bg-light">
     <!--- Main -->
     <main>
-        <header>
+        <header class="bg-white">
             <div class="container">
                 <!-- Navbar -->
-                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">
                             <!-- Logo -->
@@ -26,39 +33,56 @@
                         <span class="navbar-toggler-icon"></span>
                         </button>
                         <!-- Search Bar -->
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        <form class="d-flex position-relative search" role="search">
+                            <button class="position-absolute btn-icon-search" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search"/>
+                            <button class="position-absolute btn-more-filters">
+                                <i class="fa-solid fa-sliders"></i>
+                            </button>
                         </form>
                         <!-- /Search Bar -->
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <!-- Wistlist Start -->
                             <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a class="nav-link border active" aria-current="page" href="#">
                                 <i class="fa-solid fa-heart"></i>
                             </a>
                             </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <!-- Wishlist End -->
+                            <!-- Notifications Start -->
+                            <li class="nav-item li-notification">
+                            <a class="nav-link border" href="#">
                                 <i class="fa-solid fa-bell"></i>
+                                <div class="dot">
+                                    <i class="icon fa-solid fa-circle"></i>
+                                </div>
                             </a>
                             </li>
+                            <!-- Notification End -->
+                             <!-- Setting Start -->
                             <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link border" href="#">
                                 <i class="fa-solid fa-gear"></i>
                             </a>
                             </li>
-                            <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <!-- Setting End -->
+                             <!-- User Image Start -->
+                            <li class="nav-item">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="images/user-image.jpg" alt="">
+                                
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item" href="#">Account</a></li>
+                                <li><a class="dropdown-item" href="#">Payment</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Domain</a></li>
                             </ul>
                             </li>
+                            <!-- User Image End -->
                         </ul>
                         </div>
                     </div>
@@ -66,8 +90,228 @@
                  <!-- /Navbar -->
             </div>
         </header>
+
+        <!-- Intro Card Banner - Start -->
+         <section class="section-intro-card-banner py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!-- Card - Car Rent - Intro Banner - Start -->
+                        <div class="card border-0 text-bg-dark">
+                            <img src="images/bg-ads-1.jpg" class="card-img" alt="bg-ads-1">
+                            <div class="card-img-overlay">
+                                <div class="col-lg-6 pt-3">
+                                    <h5 class="card-title">The Best Platform<br> for Car Rental</h5>
+                                    <p class="card-text">Ease of doing a car rental safely and reliably. Of course at a low price.</p>
+                                    <a href="" class="btn btn-primary">Rental Car</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card - Car Rent - Intro Banner - End -->
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-flex">
+                        <!-- Card - Car Rent - Intro Banner - Start -->
+                        <div class="card border-0 text-bg-dark">
+                            <img src="images/bg-ads-1.jpg" class="card-img" alt="bg-ads-1">
+                            <div class="card-img-overlay">
+                                <div class="col-lg-6 pt-3">
+                                    <h5 class="card-title">The Best Platform<br> for Car Rental</h5>
+                                    <p class="card-text">Ease of doing a car rental safely and reliably. Of course at a low price.</p>
+                                    <a href="" class="btn btn-primary">Rental Car</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card - Car Rent - Intro Banner - End -->
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- Intro Card Banner - End -->
+        <!-- Pick up - Location - Date - Time -->
+         <section class="section-pick-up-location-date-time py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="bg-white rounded-3 p-4">
+                            <h4>Pick Up</h4>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div>
+                                        <label for="">Location</label>
+                                        <div>
+                                            <select name="" id="" class="form-select">
+                                                <option value="">Select your city</option>
+                                                <option value="">Lahore</option>
+                                                <option value="">Islamabad</option>
+                                                <option value="">Karachi</option>
+                                                <option value="">Quetta</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div>
+                                        <label for="">Date</label>
+                                        <div>
+                                            <select name="" id="" class="form-select">
+                                                <option value="">Select your date</option>
+                                                <option value="">18, May, 2025</option>
+                                                <option value="">19, May, 2025</option>
+                                                <option value="">20, May, 2025</option>
+                                                <option value="">21, May, 2025</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div>
+                                        <label for="">Time</label>
+                                        <div>
+                                            <select name="" id="" class="form-select">
+                                                <option value="">Select your time</option>
+                                                <option value="">8:00pm</option>
+                                                <option value="">9:00pm</option>
+                                                <option value="">8:00am</option>
+                                                <option value="">9:00am</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 d-flex justify-content-center align-items-center">
+                        <button class="btn btn-primary shadow-lg">
+                            <i class="fa-solid fa-right-left fa-rotate-90"></i>
+                        </button>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="bg-white rounded-3 p-4">
+                            <h4>Pick Up</h4>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div>
+                                        <label for="">Location</label>
+                                        <div>
+                                            <select name="" id="" class="form-select">
+                                                <option value="">Select your city</option>
+                                                <option value="">Lahore</option>
+                                                <option value="">Islamabad</option>
+                                                <option value="">Karachi</option>
+                                                <option value="">Quetta</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div>
+                                        <label for="">Date</label>
+                                        <div>
+                                            <select name="" id="" class="form-select">
+                                                <option value="">Select your date</option>
+                                                <option value="">18, May, 2025</option>
+                                                <option value="">19, May, 2025</option>
+                                                <option value="">20, May, 2025</option>
+                                                <option value="">21, May, 2025</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div>
+                                        <label for="">Time</label>
+                                        <div>
+                                            <select name="" id="" class="form-select">
+                                                <option value="">Select your time</option>
+                                                <option value="">8:00pm</option>
+                                                <option value="">9:00pm</option>
+                                                <option value="">8:00am</option>
+                                                <option value="">9:00am</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!-- /Pick up - Location - Date - Time -->
+          <!-- Section - Products - Cards - Start -->
+          <section class="section-products-cards">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <!-- Card Product -->
+                         <div class="card card-product">
+                            <div class="card-body">
+
+                                <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Koenigsegg</h5>
+                                        <i class="fa-solid fa-heart"></i>                                
+                                </div>
+                                <div class="fs-6 text-light">
+                                    Sport
+                                </div>
+                                <img src="images/img-product.jpg" alt="img-product" class="img-card-product">
+                                <div class="d-flex gap-3">
+                                    <div class="d-flex gap-1">
+                                        <i class="fa-solid fa-gas-pump"></i>
+                                        <div class="fs-6 text-light">90L</div>
+                                    </div>
+                                    <div class="d-flex gap-1">
+                                        <i class="fa-solid fa-gas-pump"></i>
+                                        <div class="fs-6 text-light">90L</div>
+                                    </div>
+                                    <div class="d-flex gap-1">
+                                        <i class="fa-solid fa-gas-pump"></i>
+                                        <div class="fs-6 text-light">90L</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="price">
+                                        $99.00/<span class="fs-6 text-light">day</span>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-primary">Rent Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                         <!-- /Card Product -->
+                    </div>
+                </div>
+            </div>
+          </section>
+          <!-- Section - Products - Cards - End -->
     </main>
     <!-- /Main -->
+     <!-- Off Canvas Start -->
+        <!-- <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+        </div>
+        <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+        </div>
+    </div>
+    </div> -->
+      <!-- Off Canvas End -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- FontAwesome JS -->
     <script src="js/all.min.js"></script>

@@ -1,0 +1,120 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+
+
+:root {
+    --bs-light: #F6F7F9;
+}
+
+
+/* Header Start */
+
+.navbar-nav {
+    gap: 1rem;
+    li.nav-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a.border {
+            border: 1px solid #C3D4E9;
+            border-radius: 100px;
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.li-notification {
+    position: relative;
+    .dot {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: red;
+        .icon {
+            font-size: 0.75rem;
+        }
+    }
+}
+
+/* Header End */
+
+/* Search CSS Start  */
+
+.search {
+    .form-control {
+        border-radius: 100px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        min-width: 30.75rem;
+    }
+    .btn-icon-search {
+        left: 1rem;
+        top: 0.5rem;
+        background: none;
+        border: 0;
+    }
+    .btn-more-filters {
+        right: 1rem;
+        top: 0.5rem;
+        background: none;
+        border: 0;
+    }
+}
+
+
+/* Search CSS End */
+
+
+/* Media Query- 40rem (640px) - Start */
+@media (width >= 40rem) {
+    .col-content {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .search {
+        .form-control {
+            min-width: 100%;
+        }
+    }
+}
+
+/* Media Query- 40rem (640px) - End */
+
+
+/* Media Query- 26.5625rem (425px) - Start */
+@media (width >= 26.5625rem) {
+    .col-content {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .search {
+        .form-control {
+            min-width: 100%;
+        }
+    }
+}
+
+/* Media Query- 26.5625rem (640px) - End */
+
+
+/* Media Query- 48rem (768px) - Start */
+@media (width >= 48rem) {
+    .col-content {
+        width: 40%;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Media Query- 48rem (768px) - End */
