@@ -9,6 +9,10 @@ body {
     --bs-secondary-rgb: 144, 163, 191;
 }
 
+h2 {
+    margin-bottom: 2rem;
+}
+
 
 /* Header Start */
 
@@ -119,3 +123,28 @@ body {
 }
 
 /* Media Query- 48rem (768px) - End */
+
+
+.card-product {
+    .stretched-link, .stretched-link::after {
+            display: none;
+        }
+        
+    &:hover {
+        .stretched-link, .stretched-link::after {
+            display: block;
+        }
+        .stretched-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.75);
+            border-radius: 0.25rem;
+        }
+    }
+}

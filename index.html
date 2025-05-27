@@ -248,13 +248,12 @@
                         <!-- Card Product -->
                          <div class="card card-product border-0">
                             <div class="card-body">
-
                                 <div class="d-flex justify-content-between">
                                         <h5 class="card-title">Koenigsegg</h5>
                                         <a class="link-wishlist text-danger" href="wishlist.html"><i class="fa-solid fa-heart"></i></a>                                
                                 </div>
                                 <div class="fs-6 text-secondary">
-                                    Sport
+                                    <span class="badge text-bg-secondary">Sport</span>
                                 </div>
                                 <img src="images/img-product.jpg" alt="img-product" class="img-card-product my-5">
                                 <!-- Car - Details - Start -->
@@ -283,6 +282,9 @@
                                     </div>
                                 </div>
                                 <!-- Car - Price - End -->
+                                 <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#carDetailsModal">
+                                    <i class="fa-solid fa-eye text-white"></i>
+                                 </a>
                             </div>
                          </div>
                          <!-- /Card Product -->
@@ -762,13 +764,120 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12 d-flex justify-content-center"><button class="btn btn-primary">
-                        Show more car
-                    </button></div>
+                    <!-- <div class="col-lg-12 d-flex justify-content-center">
+                        <button class="btn btn-primary">
+                            Show more car
+                        </button>
+                    </div> -->
+                    <div class="col-lg-12 d-flex justify-content-end">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                            </nav>
+                    </div>
                 </div>
             </div>
           </section>
           <!-- Section - Products - Cards - End -->
+        <!-- Section - FAQ -->
+        <section class="faq py-5">
+            <div class="container">
+                <h2 class="text-center">Frequently Asked Question</h2>
+                <div class="accordion" id="faqAccordion">
+
+                    <!-- FAQ Item 1 -->
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                        What documents are required to rent a car?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                        You’ll need a valid driver’s license, a government-issued ID (e.g., passport or national ID), and a credit or debit card for the security deposit.
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                        Is there a minimum age to rent a car?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                        Yes, the minimum age is usually 21 years. However, it may vary depending on the vehicle category and local laws.
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                        Can I return the car to a different location?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                        Yes, one-way rentals are available, but they may incur an additional fee depending on the distance and drop-off location.
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                        What happens if the car breaks down?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                        We provide 24/7 roadside assistance. If your car breaks down, contact us immediately and we’ll arrange help or a replacement vehicle.
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                        Is fuel included in the rental price?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                        No, fuel is not included. The vehicle is provided with a full tank and should be returned with a full tank to avoid refueling charges.
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- /Section - FAQ -->
+        <!-- Section - To Display Popover BS Componenet -->
+         <section class="py-5">
+            <div class="container">
+               <button type="button" class="btn btn-outline-info" 
+        data-bs-toggle="popover" 
+        data-bs-trigger="focus" 
+        title="Koenigsegg - Info"
+        data-bs-content="Sport car with 90L fuel capacity, manual transmission, and seats 2 people. Rent it now for just $99/day.">
+  More Info
+</button>
+            </div>
+         </section>
+        <!-- /Section - To Display Popover BS Componenet -->
+           <!-- Footer -->
            <footer class="bg-white py-5">
             <div class="container">
                 <div class="row">
@@ -788,7 +897,7 @@
                     <div class="col-lg-2">
                         <h2 class="fs-4">About</h2>
                         <ul class="list-unstyled d-flex flex-column gap-3">
-                            <li><a href="" class="text-dark text-decoration-none">How It works</a></li>
+                            <li><a href="contact.html" class="text-dark text-decoration-none">Contact</a></li>
                             <li><a href="" class="text-dark text-decoration-none">Featured</a></li>
                             <li><a href="" class="text-dark text-decoration-none">Partnership</a></li>
                             <li><a href="" class="text-dark text-decoration-none">Business Relation</a></li>
@@ -831,6 +940,7 @@
                 </div>
             </div>
            </footer>
+           <!-- /Footer -->
     </main>
     <!-- /Main -->
      <!-- Off Canvas Start -->
@@ -856,8 +966,41 @@
     </div>
     </div> -->
       <!-- Off Canvas End -->
+       <!-- Car Details Modal -->
+        <div class="modal fade" id="carDetailsModal" tabindex="-1" aria-labelledby="carDetailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+            
+            <div class="modal-header">
+                <h5 class="modal-title" id="carDetailsModalLabel">Koenigsegg - Full Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="row">
+                <div class="col-md-6">
+                    <img src="images/img-product.jpg" class="img-fluid rounded" alt="Koenigsegg">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="mb-3">Koenigsegg</h4>
+                    <p><strong>Type:</strong> <span class="badge text-bg-secondary">Sport</span></p>
+                    <p><strong>Fuel Capacity:</strong> 90L</p>
+                    <p><strong>Transmission:</strong> Manual</p>
+                    <p><strong>Seats:</strong> 2 People</p>
+                    <p class="fw-bold fs-5">$99.00 <span class="fs-6 text-secondary">/ day</span></p>
+                    <button class="btn btn-primary">Rent This Car</button>
+                </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        </div>
+        <!-- /Car Details Modal -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- FontAwesome JS -->
     <script src="js/all.min.js"></script>
+    <!-- App.js -->
+     <script src="js/app.js"></script>
   </body>
 </html>
